@@ -1,5 +1,3 @@
-.libPaths(c("/usr/local/lib/R/site-library", .libPaths()))
-
 library(plumber)
 library(seasonal)
 
