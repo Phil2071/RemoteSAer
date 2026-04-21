@@ -12,7 +12,6 @@ RUN mkdir -p /usr/local/lib/R/site-library
 RUN Rscript -e "install.packages('plumber',  lib='/usr/local/lib/R/site-library', repos='https://cloud.r-project.org')"
 RUN Rscript -e "install.packages('seasonal', lib='/usr/local/lib/R/site-library', repos='https://cloud.r-project.org')"
 RUN Rscript -e "install.packages('jsonlite', lib='/usr/local/lib/R/site-library', repos='https://cloud.r-project.org')"
-RUN Rscript -e "library(plumber); library(seasonal); seasonal::checkX13()"
 
 WORKDIR /app
 COPY api.R .
