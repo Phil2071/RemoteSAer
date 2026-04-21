@@ -1,3 +1,5 @@
+.libPaths(c("/usr/local/lib/R/site-library", .libPaths()))
+
 library(plumber)
 
 port <- as.integer(Sys.getenv("PORT", "8080"))
